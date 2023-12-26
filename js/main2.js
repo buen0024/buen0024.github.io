@@ -3,16 +3,11 @@
   document.querySelector('.navbar__logo').addEventListener('mouseleave', removeRest);
   document.querySelector('.toggle').addEventListener('click',displayNav);
   document.addEventListener('DOMContentLoaded', () => {
-    displayLogo();
     progressScroll();
   });
 })();
 
 const restText = document.querySelector('.navbar__title--hidden');
-const hiText = document.querySelector('tspan');
-const moon = document.querySelector('#moon');
-const lineHi = document.querySelector('#line-hi');
-
 
 function displayRest(){
   restText.classList.add('active');
@@ -30,15 +25,6 @@ function displayNav(){
   document.querySelector('.toggle__line--top').classList.toggle('open');
   document.querySelector('.toggle__line--middle').classList.toggle('open');
   document.querySelector('.toggle__line--bottom').classList.toggle('open');
-}
-
-function displayLogo() {
-  let path = document.querySelector('#trace-girl');
-  let length = path.getTotalLength();
-  // console.log(length)
-  path.style.strokeDasharray = length + ' ' + length;
-  path.style.strokeDashoffset = length;
-
 }
 
 function progressScroll(){
