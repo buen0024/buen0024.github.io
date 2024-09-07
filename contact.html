@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+</head>
+
+<body id="page">
+  <div id="loading-bar"></div>
+  <ul class="skip-links">
+    <li>
+      <a class="skip-links__link" href="#nav">Skip to main navigation</a>
+    </li>
+    <li>
+      <a class="skip-links__link" href="#main">Skip to main content</a>
+    </li>
+  </ul>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="navbar__headline">
+        <a class="navbar__logo" href="./">
+          <span class="navbar__title">Janine</span>
+          <span class="navbar__title--hidden">Ann Buenaseda</span>
+        </a>
+      </h1>
+
+      <nav id="nav" class="navbar__nav">
+        <ul class="navbar__list">
+          <li><a class="navbar__link" href="./">Home</a></li>
+          <li><a class="navbar__link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="navbar__link" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="toggle" data-target="nav" aria-label="Click to open mobile navigation">
+        <span class="toggle__line toggle__line--top"></span>
+        <span class="toggle__line toggle__line--middle"></span>
+        <span class="toggle__line toggle__line--bottom"></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="contact-us" tabindex="0">
+      <div class="container">
+        <div class="contact-us__wrap">
+    
+          <form method="post"
+            action="https://script.google.com/macros/s/AKfycbyevqVvP5HvpDp9luGm4fIeijpFAbnxjKE4vbMj8d5at30HzOSGh6jD9z5JTEZko0_p7Q/exec"
+            class="contact-us__form">
+            <div class="form-unit full">
+              <h2 class="contact-us__title">Let's Connect!</h2>
+              <p class="contact-us__text">Feel free to drop me a message.</p>
+              <p class="contact-us__text">Let's discuss about how I can bring my A-game to your team!</p>
+            </div>
+    
+            <div class="form-unit full">
+              <label for="fName">Full Name*</label>
+              <input type="text" id="fName" name="fName" required />
+            </div>
+    
+            <div class="form-unit">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-unit">
+              <label for="tel">Phone</label>
+              <input type="tel" id="tel" name="tel" />
+            </div>
+    
+            <div class="form-unit full">
+              <label for="subject">Subject*</label>
+              <select id="subject" name="subject">
+                <option value="" selected disabled></option>
+                <option value="sales">General Inquiry</option>
+                <option value="pricing">Project Collaboration</option>
+                <option value="support">Job Opportunity</option>
+              </select>
+            </div>
+    
+            <div class="form-unit full">
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+    
+            <div class="form-unit full">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+    
+          </form>
+    
+        </div>
+      </div>
+    </header>
+  </main>
+  
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2023 Janine Ann Buenaseda.</p>
+      <p class="footer__text">All rights reserved.</p>
+      <div class="footer__links">
+        <a href="www.linkedin.com/in/janine-ann-buenaseda-965684299" target="_blank"><span class="footer__link">Linked
+            In</span><i class="lni lni-linkedin-original"></i></a>
+        <a href="https://github.com/buen0024" target="_blank"><span class="footer__link">Github</span><i
+            class="lni lni-github-original"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-to-top"><i class="lni lni-arrow-up"></i></div>
+
+  <script src="./js/main2.js"></script>
+</body>
+
+</html>
